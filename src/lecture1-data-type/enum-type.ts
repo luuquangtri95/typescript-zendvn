@@ -1,0 +1,7 @@
+enum STATUS {
+  CREATED = 100,
+  PROCESS = 101,
+  FINISH = 102,
+}
+
+let todoStatus: STATUS = STATUS.CREATED
