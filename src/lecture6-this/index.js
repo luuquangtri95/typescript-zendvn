@@ -46,9 +46,15 @@ function Car(name, color, weight) {
 
   this.run = function () {
     console.log('runing....', this)
+    ;(function () {
+      console.log(this) // global object(window or globalThis)
+    })()
   }
 }
 
+// add new property
+Car.prototype.author = 'Luu quang tri'
+
 const s450 = new Car('s450', 'red', 10)
 
-console.log(s450.run())
+console.log(s450.author)
