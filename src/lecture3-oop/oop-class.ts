@@ -1,16 +1,16 @@
 class Task {
-  _id: number
-  _name: string
-  _state: string
+  id: number
+  name: string
+  state: string
 
-  constructor(_id: number, _name: string, _state: string) {
-    this._id = _id
-    this._name = _name
-    this._state = _state
+  constructor(id: number, name: string, state: string) {
+    this.id = id
+    this.name = name
+    this.state = state
   }
 
   showTaskInfo() {
-    console.log(`${this._id} - ${this._name} - ${this._state}`)
+    console.log(`${this.id} - ${this.name} - ${this.state}`)
   }
 }
 
